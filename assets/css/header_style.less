@@ -1,0 +1,115 @@
+@default-layout-width: 1440px;
+@color-primary: #C8102E;
+.header{
+    width: 100%;
+    max-width: @default-layout-width;
+    margin: 0 auto;
+    .header__bar{
+        background-color: @color-primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 120px;
+        .header__connect{
+            font-size: 14px;
+            display: flex;
+            column-gap: 10px;
+            color: #fff;
+            font-weight: 300;
+            a svg{
+                .svg(#fff, 14px)
+            }
+        }
+        .header__options a{
+            font-size: 13px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            svg{
+                .svg(#fff, 13px)
+            }
+            &{
+                margin-left: 10px;
+            }
+        }
+    }
+    .header__main{
+        padding: 15px 120px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+        .header__logo{
+            width: 300px;
+        }
+        .header__search{
+            width: 55%;
+            form{
+                display: grid;
+                grid-template-columns: 95% 5%;
+                padding: 4px 10px;
+                border: 1px solid #333;
+                border-radius: 30px;
+                input{
+                    font-size: 14px;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    background-color: @color-primary;
+                    border-radius: 10000px;
+                    width: 35px;
+                    height: 35px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    svg{
+                        .svg(#fff, 20px)
+                    }
+                }
+            }
+            .header-search__bar{
+                margin-left: 10px;
+                ul li{
+                    list-style: none;
+                    display: inline-block;
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: #000;
+                    }
+                }
+                li + li{
+                    margin-left: 30px;
+                }
+            }
+        }
+        .header__actions{
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                align-items: end;
+                column-gap: 10px;
+                font-size: 16px;
+                a svg{
+                    .svg(@color-primary, 25px);
+                    margin-bottom: 5px;
+                }
+                li{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.svg(@fill: #fff, @size: 13px){
+    fill: @fill;
+    width: @size;
+}

@@ -1,0 +1,540 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet/less" type="text/css" href="./assets/css/styles.less" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+ </head>
+ <body>
+     <!-- html header -->
+     <header class="header">
+         <div class="header__bar">
+            <div class="header__connect">
+                <span>Kết Nối</span>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+            </div>
+            <div class="header__options">
+                <a href="">Hệ Thống Cửa Hàng <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></a>
+                <a href="">Tiếng Việt <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+            </div>
+         </div>
+         <div class="header__main">
+            <a href=""><img src="./assets/img/image 3.png" class="header__logo" /></a>
+            <div class="header__search">
+                <form action="" method="post">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+                </form>
+                <div class="header-search__bar">
+                    <ul>
+                        <li><a href="">Thời trang</a></li>
+                        <li><a href="">Mỹ phẩm</a></li>
+                        <li><a href="">Chanel</a></li>
+                        <li><a href="">Nước hoa</a></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="header__actions">
+                 <ul>
+                     <li>
+                         <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a>
+                         <p>Giỏ Hàng</p>
+                     </li>
+                     <li>
+                         <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M14 2.2C22.5-1.7 32.5-.3 39.6 5.8L80 40.4 120.4 5.8c9-7.7 22.3-7.7 31.2 0L192 40.4 232.4 5.8c9-7.7 22.2-7.7 31.2 0L304 40.4 344.4 5.8c7.1-6.1 17.1-7.5 25.6-3.6s14 12.4 14 21.8V488c0 9.4-5.5 17.9-14 21.8s-18.5 2.5-25.6-3.6L304 471.6l-40.4 34.6c-9 7.7-22.2 7.7-31.2 0L192 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L80 471.6 39.6 506.2c-7.1 6.1-17.1 7.5-25.6 3.6S0 497.4 0 488V24C0 14.6 5.5 6.1 14 2.2zM96 144c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96zM80 352c0 8.8 7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96c-8.8 0-16 7.2-16 16zM96 240c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96z"/></svg></a>
+                         <p>Đơn Mua</p>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </header>
+     <!-- html banner -->
+     <section class="banner">
+         <div class="banner__image">
+            <div class="banner__main">
+                <a href=""><img src="./assets/img/Rectangle 90.png" alt=""></a>
+            </div>
+            <div class="banner__sub">
+                <ul>
+                    <li><a href=""><img src="./assets/img/Rectangle 91.png" alt=""></a></li>
+                    <li><a href=""><img src="./assets/img/Rectangle 92.png" alt=""></a></li>
+                </ul>
+            </div>
+         </div>
+         <div class="banner__categories">
+             <ul>
+                 <li>
+                     <a href="">
+                         <img src="./assets/img/Vector (3).png" alt="">
+                         <p>Thương mại điện tử</p>
+                     </a>
+                 </li>
+                 <li>
+                    <a href="">
+                        <img src="./assets/img/Vector (4).png" alt="">
+                        <p>AR way-finding</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/Vector (5).png" alt="">
+                        <p>360 Virtual Mall</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/Vector (6).png" alt="">
+                        <p>Livestream</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/Group 9.png" alt="">
+                        <p>R+ Loyalty </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/Vector (7).png" alt="">
+                        <p>Virtual Concierge</p>
+                    </a>
+                </li>
+             </ul>
+         </div>
+     </section>
+     <!-- html category -->
+     <section class="categories">
+         <h4 class="categorys__title">danh mục</h4>
+         <div class="categorys__main">
+             <ul>
+                 <li>
+                     <a href="">
+                        <img src="./assets/img/image 8.png" alt="">
+                        <p>Túi Xách</p>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                       <img src="./assets/img/image 5.png" alt="">
+                       <p>Trang sức</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 6.png" alt="">
+                       <p>Đồng hô</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 7.png" alt="">
+                       <p>Giày dép</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 8.png" alt="">
+                       <p>Nước hoa</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 6.png" alt="">
+                       <p>Túi Xách</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 10.png" alt="">
+                       <p>Túi Xách</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 11.png" alt="">
+                       <p>Túi Xách</p>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                       <img src="./assets/img/image 11.png" alt="">
+                       <p>Túi Xách</p>
+                   </a>
+                </li>
+                <li>
+                   <a href="">
+                      <img src="./assets/img/image 5.png" alt="">
+                      <p>Trang sức</p>
+                  </a>
+               </li>
+               <li>
+                   <a href="">
+                      <img src="./assets/img/image 6.png" alt="">
+                      <p>Đồng hô</p>
+                  </a>
+               </li>
+               <li>
+                   <a href="">
+                      <img src="./assets/img/image 7.png" alt="">
+                      <p>Giày dép</p>
+                  </a>
+               </li>
+               <li>
+                   <a href="">
+                      <img src="./assets/img/image 8.png" alt="">
+                      <p>Nước hoa</p>
+                  </a>
+               </li>
+               <li>
+                   <a href="">
+                      <img src="./assets/img/image 6.png" alt="">
+                      <p>Túi Xách</p>
+                  </a>
+               </li>
+               <li>
+                   <a href="">
+                      <img src="./assets/img/image 10.png" alt="">
+                      <p>Túi Xách</p>
+                  </a>
+               </li>
+               <li>
+                   <a href="">
+                      <img src="./assets/img/image 11.png" alt="">
+                      <p>Túi Xách</p>
+                  </a>
+               </li>
+               <li>
+                <a href="">
+                   <img src="./assets/img/image 10.png" alt="">
+                   <p>Túi Xách</p>
+               </a>
+            </li>
+            <li>
+                <a href="">
+                   <img src="./assets/img/image 11.png" alt="">
+                   <p>Túi Xách</p>
+               </a>
+            </li>
+            <li>
+                <a href="">
+                   <img src="./assets/img/image 10.png" alt="">
+                   <p>Túi Xách</p>
+               </a>
+            </li>
+            <li>
+                <a href="">
+                   <img src="./assets/img/image 11.png" alt="">
+                   <p>Túi Xách</p>
+               </a>
+            </li>
+             </ul>
+         </div>
+     </section>
+     <!-- html category with banner -->
+     <section class="image-categories">
+         <ul>
+             <li><a href=""><img src="./assets/img/Rectangle1.png" alt=""></a></li>
+             <li><a href=""><img src="./assets/img/Rectangle2.png" alt=""></a></li>
+             <li><a href=""><img src="./assets/img/Rectangle3.png" alt=""></a></li>
+         </ul>
+     </section>
+     <!-- html products with category -->
+     <section class="banner-products">
+         <div class="banner-products__header">
+             <div class="banner-products__title">
+                 <h3>Thương hiệu nổi bật</h3>
+                 <span>Chính hãng 100%</span>
+                 <span>Miễn phí vận chuyển</span>
+             </div>
+         </div>
+         <div class="banner-products__main">
+             <a href="">
+                 <img src="./assets/img/Rectangle 92.png" alt="">
+             </a>
+             <ul class="banner-products__items">
+                <li>
+                     <a href="">
+                         <img class="banner-products__img" src="./assets/img/Group 9.png" alt="">
+                         <img class="banner-products__brand" src="./assets/img/Group 9.png" alt="">
+                         <label>Giảm giá 40%</label>
+                     </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="banner-products__img" src="./assets/img/Group 9.png" alt="">
+                        <img class="banner-products__brand" src="./assets/img/Group 9.png" alt="">
+                        <label>Giảm giá 40%</label>
+                    </a>
+               </li>
+               <li>
+                    <a href="">
+                        <img class="banner-products__img" src="./assets/img/Group 9.png" alt="">
+                        <img class="banner-products__brand" src="./assets/img/Group 9.png" alt="">
+                        <label>Giảm giá 40%</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="banner-products__img" src="./assets/img/Group 9.png" alt="">
+                        <img class="banner-products__brand" src="./assets/img/Group 9.png" alt="">
+                        <label>Giảm giá 40%</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="banner-products__img" src="./assets/img/Group 9.png" alt="">
+                        <img class="banner-products__brand" src="./assets/img/Group 9.png" alt="">
+                        <label>Giảm giá 40%</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="banner-products__img" src="./assets/img/Group 9.png" alt="">
+                        <img class="banner-products__brand" src="./assets/img/Group 9.png" alt="">
+                        <label>Giảm giá 40%</label>
+                    </a>
+                </li>
+             </ul>
+         </div>
+     </section>
+     <!-- html products search -->
+     <section class="products-search">
+         <div class="products-search__header">
+             <h3>Tìm Kiếm Hàng Đầu</h3>
+             <a href="">Xem tất cả <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a>
+         </div>
+         <div class="products-search__main">
+             <ul>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                         <img src="./assets/img/image 4.png" alt="">
+                         <h4>Vali du lịch</h4>
+                         <span>Đã bán 12k + / tháng</span>
+                    </a>
+                 </li>
+             </ul>
+         </div>
+     </section>
+     <!-- html products recommend -->
+     <section class="products-recommend">
+         <div class="products-recommend__header">
+            <h3>Dành Riêng Cho Bạn</h3>
+            <a href="">Xem tất cả <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></a>
+         </div>
+         <div class="products-recommend__main">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/image 4.png" alt="">
+                        <span>Starbucks Discoveries Vanilla Sweet Cream Cold Brew Coffee</span>
+                        <div class="products__price">
+                            <h4>555.000đ</h4>
+                            <span>20%</span>
+                            <div class="products__discount">755.000đ</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/image 4.png" alt="">
+                        <span>Starbucks Discoveries Vanilla Sweet Cream Cold Brew Coffee</span>
+                        <div class="products__price">
+                            <h4>555.000đ</h4>
+                            <span>20%</span>
+                            <div class="products__discount">755.000đ</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/image 4.png" alt="">
+                        <span>Starbucks Discoveries Vanilla Sweet Cream Cold Brew Coffee</span>
+                        <div class="products__price">
+                            <h4>555.000đ</h4>
+                            <span>20%</span>
+                            <div class="products__discount">755.000đ</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/image 4.png" alt="">
+                        <span>Starbucks Discoveries Vanilla Sweet Cream Cold Brew Coffee</span>
+                        <div class="products__price">
+                            <h4>555.000đ</h4>
+                            <span>20%</span>
+                            <div class="products__discount">755.000đ</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./assets/img/image 4.png" alt="">
+                        <span>Starbucks Discoveries Vanilla Sweet Cream Cold Brew Coffee</span>
+                        <div class="products__price">
+                            <h4>555.000đ</h4>
+                            <span>20%</span>
+                            <div class="products__discount">755.000đ</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="products__more">
+                <a href="">Xem Thêm</a>
+            </div>
+         </div>
+     </section>
+     <!-- html footer -->
+     <footer class="footer">
+         <div class="footer__main">
+            <div class="footer__col">
+                <h4 class="footer__title--red">Công ty TNHH Keppel Land Việt Nam</h4>
+                <ul>
+                    <li>Giấy ĐKKD số 0310549368, do Sở KHĐT TP.HCM cấp ngày 22/12/2010.</li>
+                    <li>Người đại diện: Goh Hsien Hui Christina.</li>
+                    <li>Trụ sở: Saigon Centre, Tòa 2, 67 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM | (+84-28) 3821 3573.</li>
+                    <li class="footer-title__sub">Liên hệ</li>
+                </ul>
+                <h4>Liên Hệ</h4>
+                <ul class="footer__contact">
+                    <li>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                    </li>
+                    <li><img src="./assets/img/Rectangle 91.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>chăm sóc khách hàng</h4>
+                <ul>
+                    <li><a href="">Trung Tâm Trợ Giúp</a></li>
+                    <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="">Hướng Dẫn Bán Hàng</a></li>
+                    <li><a href="">Thanh Toán</a></li>
+                    <li><a href="">Vận Chuyển</a></li>
+                    <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>chăm sóc khách hàng</h4>
+                <ul>
+                    <li><a href="">Trung Tâm Trợ Giúp</a></li>
+                    <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="">Hướng Dẫn Bán Hàng</a></li>
+                    <li><a href="">Thanh Toán</a></li>
+                    <li><a href="">Vận Chuyển</a></li>
+                    <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+                </ul>
+            </div>
+            <div class="footer__pay">
+                <h4>Thanh toán</h4>
+                <ul>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                </ul>
+                <h4>Vận chuyển</h4>
+                <ul class="footer__shipping">
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./assets/img/Visa.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+         <div class="footer__sub">
+             <span>Copyright © 2022. Công ty TNHH Keppel Land Việt Nam. Tất cả quyền được bảo lưu.</span>
+             <ul>
+                 <li><a href="">Chính sách bảo mật</a></li>
+                 <li><a href="">Quy chế hoạt động</a></li>
+                 <li><a href="">Chính sách vận chuyển</a></li>
+                 <li><a href="">Chính sách trả hàng & hoàn tiền</a></li>
+             </ul>
+         </div>
+     </footer>
+
+ </body>
+ <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+ </html>
