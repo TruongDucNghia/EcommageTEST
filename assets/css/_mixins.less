@@ -32,3 +32,36 @@
     justify-content: center;
     align-items: center;
 }
+
+.input_search(
+    @color_border_input: @color_gray,
+    @color_border_radius_input: 50%,
+    @color_width_input: 300px,
+    @font_size_input: @text_S,
+    @color_btn: @color_white,
+    @border_radius_btn: 50%,
+    @width_btn: 35px,
+    @height_btn: 35px,
+    @color_icon: @color_white,
+    @size_icon: 12px
+){
+    border: 1px solid @color_border_input;
+    border-radius: @color_border_radius_input;
+    width: @color_width_input;
+    input{
+        font-size: @font_size_input;
+        border: none;
+        outline: none;
+    }
+    button{
+        background-color: @color_btn;
+        border-radius: @border_radius_btn;
+        width: @width_btn;
+        height: @height_btn;
+        .flex_center();
+        cursor: pointer;
+        svg{
+            .svg(@color_icon, @size_icon)
+        }
+    }
+}
