@@ -1,0 +1,34 @@
+.a(@color: @color-text, @size: @text_S){
+    color: @color;
+    font-size: @size;
+    text-decoration: none;
+}
+
+.svg(@fill: @color-white, @size: @text_S){
+    fill: @fill;
+    width: @size;
+}
+.text(@color: @color-black, @size: @text_M, @weight: 400){
+    color: @color;
+    font-size: @size;
+    font-weight: @weight;
+}
+.layout(@width: @default-layout-width){
+    max-width: @width;
+    margin: 0 auto;
+}
+.title(@color: @color-primary, @size: @text_L, @weight: 700){
+    color: @color;
+    font-size: @size;
+    font-weight: @weight;
+    font-family: @font-family;
+}
+.border(@color: @color-gray, @size: 1px, @radius: 0px){
+    border: @size solid @color ;
+    border-radius: @radius;
+}
+.flex_center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

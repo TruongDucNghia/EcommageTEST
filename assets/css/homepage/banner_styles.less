@@ -23,9 +23,7 @@
         }
     }
     .banner__categories{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex_center();
         margin-top: 37px;
         padding-bottom: 40px;
         ul li{
@@ -33,8 +31,7 @@
             display: inline-block;
             text-align: center;
             img{
-                border: 1px solid rgba(217, 217, 217, 1);
-                border-radius: 100%;
+                .border(rgba(217, 217, 217, 1), 1px, 100%);
                 padding: 20px;
                 overflow: visible;
                 margin-bottom: 10px;
