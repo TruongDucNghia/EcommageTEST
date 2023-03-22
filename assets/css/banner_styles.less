@@ -1,15 +1,15 @@
-@default-layout-width: 1440px;
-@color-primary: #C8102E;
-
 .banner{
-    width: @default-layout-width;
-    margin: 0 auto;
+    background-color: @color-bg-white;
+    margin-top: 40px;
+    .banner__main{
+        max-width: @default-layout-width;
+        margin: 0 auto;
+    }
     .banner__image{
-        padding: 0px 120px;
         display: flex;
-        margin-top: 40px;
         column-gap: 10px;
         .banner__sub{
+
             ul li{
                 list-style: none;
             }

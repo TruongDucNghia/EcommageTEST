@@ -1,0 +1,85 @@
+.products-recommend{
+    background-color: @color-bg;
+    padding-top: 40px;
+    .products__main{
+        max-width: @default-layout-width;
+        margin: 0 auto;
+        background-color: @color-bg-white;
+        padding: 20px;
+    }
+    .products-recommend__header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f5f5f5;
+        padding-bottom: 20px;
+        a{
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            .text(@color-text, 14px, 400);
+            svg{
+                .svg(@color-text, 12px)
+            }
+        }
+        h3{
+            .text(@color-primary, 19px, 700);
+            padding-bottom: 20px;
+            border-bottom: 3px solid @color-primary;
+        }
+    }
+    .products-recommend__main{
+        margin-top: 30px;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            a{
+                text-decoration: none;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+            span{
+                .text(@color-text, 14px, 400);
+            }
+        }
+        .products__price{
+            margin-top: 10px;
+            position: relative;
+            h4{
+                .text(@color-text, 15px, 600);
+            }
+            .products__discount{
+                font-size: 12px;
+                text-decoration: line-through;
+                color: #333;
+            }
+            span{
+                position: absolute;
+                top: 1px;
+                left: 75px;
+                padding: 5px 7px;
+                background-color: @color-primary;
+                color: #fff;
+                border-radius: 50px;
+                font-size: 12px;
+            }
+        }
+    }
+    .products__more{
+        width: 240px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #d9d9d9;
+        background-color: #fff;
+        margin-top: 20px;
+        a{
+            text-decoration: none;
+            color: @color-text;
+        }
+    }
+}
