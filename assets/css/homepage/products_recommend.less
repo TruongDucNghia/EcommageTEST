@@ -10,19 +10,19 @@
     .products-recommend__header{
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #f5f5f5;
         padding-bottom: 20px;
         a{
             display: flex;
             align-items: center;
             column-gap: 5px;
-            .text(@color-text, 14px, 400);
+            font-size: @text_S;
+            font-weight: @font-normal;
             svg{
-                .svg(@color-text, 12px)
+                .svg(@color-text, @size_icon-S)
             }
         }
         h3{
-            .text(@color-primary, 19px, 700);
+            .title(@color-primary, @text_L, @font-bold);
             padding-bottom: 20px;
             border-bottom: 3px solid @color-primary;
         }
@@ -30,30 +30,26 @@
     .products-recommend__main{
         margin-top: 30px;
         ul{
-            list-style: none;
             display: flex;
             justify-content: space-between;
             column-gap: 20px;
-            a{
-                text-decoration: none;
-            }
             img{
                 margin-bottom: 20px;
             }
             span{
-                .text(@color-text, 14px, 400);
+                .title(@color-text, @text_M, @font-light);
             }
         }
         .products__price{
             margin-top: 10px;
             position: relative;
             h4{
-                .text(@color-text, 15px, 600);
+                .title(@color-text, @text_M, @font-bold)
             }
             .products__discount{
-                font-size: 12px;
+                font-size: @text_S;
                 text-decoration: line-through;
-                color: #333;
+                color: @color-text;
             }
             span{
                 position: absolute;
@@ -61,16 +57,21 @@
                 left: 75px;
                 padding: 5px 7px;
                 background-color: @color-primary;
-                color: #fff;
+                color: @color-white;
                 border-radius: 50px;
-                font-size: 12px;
+                font-size: @text_S;
             }
         }
     }
     .products__more{
-        .button(240px, 40px, @text_M, @color-text, #fff, @color-primary, @color-white);
-        .border(#d9d9d9, 1px);
+        .button(240px, 40px, @text_M, @color-text, @color-white, @color-gray ,0,@color-primary, @color-white);
         margin: 0 auto;
         margin-top: 20px;
+        a{
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            text-align: center;
+        }
     }
 }

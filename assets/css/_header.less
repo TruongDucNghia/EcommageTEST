@@ -3,29 +3,25 @@
     margin: 0 auto;
     background-color: @color-primary;
     .header__bar{
-        max-width: @default-layout-width;
-        margin: 0 auto;
+        .layout();
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 0px;
         .header__connect{
-            font-size: 14px;
+            .title(@color-white, @text_M, @font-light);
             display: flex;
             column-gap: 10px;
-            color: #fff;
-            font-weight: 300;
             a svg{
-                .svg(#fff, 14px);
+                .svg(@color-white, @size_icon-M);
             }
         }
         .header__options a{
-            font-size: 13px;
-            color: #fff;
+            .title(@color-white, @text_M, @font-light);
             text-align: center;
             text-decoration: none;
             svg{
-                .svg(#fff, 13px)
+                .svg(@color-white, @size_icon-S);
             }
             &{
                 margin-left: 10px;
@@ -41,7 +37,7 @@
     .header__main{
         max-width: @default-layout-width;
         padding: 15px 0px;
-        background-color: #fff;
+        background-color: @color-bg-primary;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -52,41 +48,29 @@
         .header__search{
             width: 55%;
             form{
-                display: grid;
-                grid-template-columns: 95% 5%;
-                padding: 4px 10px;
-                border: 1px solid #333;
-                border-radius: 30px;
+                position: relative;
                 input{
-                    font-size: 14px;
-                    border: none;
-                    outline: none;
+                    .input_search(100%, 9px, 32px, 9px, 20px, @color-gray, 30px, @text_M, #333)
                 }
-                button{
-                    background-color: @color-primary;
-                    border-radius: 10000px;
-                    width: 35px;
-                    height: 35px;
-                    border: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-                    svg{
-                        .svg(#fff, 20px)
-                    }
+            }
+            button{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 5px;
+                .button(25px, 25px, @text_M, @color-text, @color-primary, @color-primary, 100%);
+                cursor: pointer;
+                svg{
+                    .svg(@color-white, @size_icon-M)
                 }
             }
             .header-search__bar{
                 margin-left: 10px;
                 ul li{
-                    list-style: none;
                     display: inline-block;
                     margin-top: 10px;
                     a{
-                        text-decoration: none;
-                        font-size: 15px;
-                        color: #000;
+                        font-size: @text_M;
                     }
                 }
                 li + li{
@@ -97,13 +81,12 @@
         .header__actions{
             ul{
                 display: flex;
-                list-style: none;
                 justify-content: space-between;
                 align-items: end;
                 column-gap: 10px;
                 font-size: 16px;
                 a svg{
-                    .svg(@color-primary, 25px);
+                    .svg(@color-primary, @size_icon-L);
                     margin-bottom: 5px;
                 }
                 li{

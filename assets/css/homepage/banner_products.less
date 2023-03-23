@@ -14,12 +14,12 @@
             .flex_center();
             column-gap: 15px;
             h3{
-                .text(@color-primary, 19px, 700);
+                .title(@color-primary, @text_L, @font-bold);
             }
             p{
                 display: flex;
                 column-gap: 5px;
-                .text(@color-text, 16px, 700);
+                .title(@color-text, @text_M, @font-bold);
                 svg{
                     .svg(@color-primary, 19px)
                 }
@@ -29,7 +29,7 @@
             display: flex;
             align-items: center;
             column-gap: 5px;
-            .text(@color-text, 14px, 400);
+            .title(@color-text, @text_M, @font-light);
             svg{
                 .svg(@color-text, 12px)
             }
@@ -65,7 +65,7 @@
             }
             label{
                 margin-top: 10px;
-                .text(@color-primary, 17px, 400);
+                .title(@color-primary, @text_M, @font-light);
             }
         }
     }
